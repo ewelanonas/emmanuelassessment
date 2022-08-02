@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite for DMG Media" verbose="1">
+	<listeners>
+		<!-- Add Listerner after suite and before test -->
+		<listener class-name="base.TestListener" />
+	</listeners>
+	<test name="Test Cases for DMG Media">
+		<classes>
+			<class name="testcases.Test1">
+				<methods>
+					<include name="verifyData" />
+					<include name="verifyColor" />
+					<include name="verifyImageButtons" />
+					<include name="verifyExpandVideo" />
+					<include name="verifyTable" />
+				</methods>
+			</class>
+			<class name="testcases.Test2">
+			<methods>
+					<include name="testTwoPost" />
+					<include name="testTwoGet" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test Cases for DMG Media -->
+</suite> <!-- Test Suite for DMG Media -->
